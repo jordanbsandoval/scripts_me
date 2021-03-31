@@ -1,7 +1,7 @@
 #!/bin/bash
 # Estableciendo nombre de usuario y correo
-git config --global user.name "jordanbsandoval"
-git config --global user.email "1608@holbertonschool.com"
+git config --global user.name $1
+git config --global user.email $1
 
 # Elegir el editor para cuando git te solicite introducir un mensaje o arreglar conflictos
 git config --global core.editor "vim"
