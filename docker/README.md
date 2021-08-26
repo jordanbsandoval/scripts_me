@@ -12,18 +12,27 @@ Para instalar necesita una maquina con capacidad de 64 bits que corra una de est
 
 ## Desinstale versiones antiguas si las hubiera!
 Versiones anteriores fueron llamados `docker`, `docker.io`, `docker-engine`. Debes desinstalarlos:
-> sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
 
 ## Actualice el indice `apt` del manejador de paquetes
-> sudo apt-get update
+```
+sudo apt-get update
+```
 
 # Instale
 Descargue docker
-> curl -fsSL get.docker.com -o get-docker.sh
+```
+curl -fsSL get.docker.com -o get-docker.sh
+```
 
 # Variable del sistema
-> CHANNEL=stable; sudo sh get-docker.sh
+```
+CHANNEL=stable; sudo sh get-docker.sh
+```
 
 # eliminamos los archivos de configuracion
+```
 rm get-docker.shrm get-docker.sh
-
+```
