@@ -36,3 +36,7 @@ CHANNEL=stable; sudo sh get-docker.sh
 ```
 rm get-docker.shrm get-docker.sh
 ```
+# Agregue permisos necesarios
+```
+sudo chmod 666 /var/run/docker.sock
+```
