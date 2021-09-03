@@ -13,4 +13,4 @@ curl -fsSL get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
 # eliminamos los archivos de configuracion
-rm get-docker.shrm get-docker.sh
+rm get-docker.sh
