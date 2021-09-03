@@ -1,5 +1,4 @@
 #!/bin/bash
-# Utilizo el manejo de paquetes con la opcion -y que asume todo en si. y resincroniza 
 # los archivos de indice de los paquetes desde su fuente
 sudo apt-get -y update
 
@@ -7,11 +6,11 @@ sudo apt-get -y update
 # en el sistema 
 sudo apt-get -y upgrade
 
-# curl configuracion 
+# Descarga y ejecuta para instalar la ultima version estable de Docker
 curl -fsSL get.docker.com -o get-docker.sh
 
-# Variable del sistema
-CHANNEL=stable sh get-docker.sh
+# ejecuto docker
+sudo sh get-docker.sh
 
 # eliminamos los archivos de configuracion
 rm get-docker.shrm get-docker.sh
