@@ -1,8 +1,12 @@
 #!/bin/bash
 # Configurar usuario y contrasena de github
+#1: email de github
+#2: nombre de usuarios github
+#3: token personal access
+git config --global user.email $1
+git config --global user.name $2
+git config --global credential.helper store
 # Editando el archivo donde se almacenan estas credencials
 cat > ~/.git-credentials
-# @1: nombre de usuarios github
-# @2: Token personal access
-https://$1:$2@github.com
+https://$2:$3@github.com
 exit
