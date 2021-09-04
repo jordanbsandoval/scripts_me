@@ -4,5 +4,10 @@
 cat > ~/.git-credentials
 # @1: nombre de usuarios github
 # @2: Token personal access
+# @3: correo asociado en github
 https://$1:$2@github.com
 exit
+git config --global user.email "$3"
+git config --global user.name "$1"
+git config --global credential.helper store
+
