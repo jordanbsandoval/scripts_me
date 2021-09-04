@@ -1,0 +1,13 @@
+#!/bin/bash
+# Estableciendo nombre de usuario y correo
+git config --global user.name $1
+git config --global user.email $2
+
+# Elegir el editor para cuando git te solicite introducir un mensaje o arreglar conflictos
+git config --global core.editor "vim"
+
+# Guarde el nombre y correo en el almacenamiento de credenciales de git
+git config --global credential.helper store
+
+# creando el git credentials
+echo "https://$1:$3@github.com" > ~/.git-credentials
