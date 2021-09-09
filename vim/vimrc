@@ -1,7 +1,9 @@
-set number 
+#!/bin/bash
+# Archivo de configuracion vim personal 
+echo "set number
 set autoindent
 syntax on 
 set tabstop=4
 set expandtab
 set softtabstop=4
-set cursorline
+set cursorline" > ~/.vimrc
